@@ -478,6 +478,15 @@ function isPhone($variable){
             <span class="bi-chevron-bar-up"></span>
         </a>
         <h4>© Albert TAGNI-cv</h4>
+        <div class="partage">
+                    <div class="social">
+                        <a href="#"><i class="bx bxl-facebook"></i></a>
+                        <a href="#"><i class="bx bxl-twitter"></i></a>
+                        <a href="#"><i class="bx bxl-linkedin"></i></a>
+                        <a href="#"><i class="bx bxl-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
     </footer>
     
 </body>

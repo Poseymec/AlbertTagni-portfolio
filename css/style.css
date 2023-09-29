@@ -261,7 +261,7 @@ header
 
  /**partage */
 
- .partage
+ .home .home-text .partage
  {
     position: absolute;
     
@@ -728,6 +728,9 @@ footer span:hover
 {
    font-size: 30px;
 }
+footer .partage{
+    display: none;
+}
 
  /**media pour le resolution d'ecran */
 
@@ -865,7 +868,7 @@ footer span:hover
     --p-font:0.70rem;
     transition: .2s;
     }
-    .partage{
+    .home .home-text .partage{
       
         margin-top: 12px;
         transition: .2s;
@@ -932,9 +935,9 @@ footer span:hover
         transition: .2s;
     }
      
-    .partage{
+   .home .home-text .partage{
         margin-top: 12px;
-        
+        font-size: 12px;
     }
     .home-text h1
     {
@@ -1012,24 +1015,38 @@ footer span:hover
     header{
         padding: 1% 10%;
     }
-    .partage{
+   .home  .home-text .partage{
 
         display: none;
-       margin-left: 12%;
+      /*margin-left: 12%;
      
-        margin-top: 12px;
+        margin-top: 12px;*/
        
         
         
     }
+footer .partage{
+
+      /* position: absolute;
+       
+       margin-top: 15px;
+      
+       /*left: 11.5%;*/
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   
+    }
+
+    
     .navbar{
         position: absolute;
-        width: 30%;
-        height: 270px;
+        width: 25%;
+        height: 350px;
         padding: 50px 10px;
         top:0;
         bottom: 0;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
         right:-100%;
         display: flex;
         flex-direction: column;
@@ -1118,7 +1135,7 @@ footer span:hover
 
  
   }
-  @media  (max-width: 500px){
+  @media  (max-width: 610px){
 
     header{
         padding: 1% 3%;
