@@ -51,10 +51,10 @@ body{
     color: var(--text-color);
     margin: 0;
     padding: 0;
-    width: 100vw;
+   /* width: 100%;*/
+   box-sizing: border-box;
     overflow-x: hidden;
-    min-height: 100vh;
-
+  
 
    
 
@@ -106,6 +106,7 @@ header
     background:var(--bg-color);
     transition: all ease .45s;
     margin-bottom: 10px;
+
     
 
     
@@ -173,8 +174,8 @@ header
     transition: .2S;
   
     
-    width: 100vw;
-    min-height: 100vh;
+    width: 100%;
+   /* min-height: 100vh;*/
     overflow-x: hidden;
     margin-top: 2%;
     margin-bottom:1%;
@@ -294,8 +295,58 @@ header
     border: 1px solid #3b3b3b;
  }
 
+ /**---------------------------------------section apropos------------------------------------------------------- */
 
 
+
+
+.a-propos{
+    width: 100%;
+    padding: 70px 0px;
+ 
+}
+
+.imag{
+    height: 490px;
+    width: 350px;
+}
+
+.a-propos-text{
+width: 650px;
+}
+
+.main{
+   width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    margin-top: 60px;
+
+}
+
+.a-propos h2{
+    color: var(--main-color);
+}
+
+.biographie-1{
+
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+.biographie-1 span{
+    color: var(--main-color);
+}
+.biographie-2{
+    letter-spacing: 1.5px;
+    line-height: 20px;
+    font-size: 15px;
+    text-align: left;
+}
  /* ------------------------------section 2 competences-------------------------------*/
 
 #section2 h2{
@@ -839,7 +890,29 @@ footer .partage{
         transition: .2s;
     }
 
+    /**-----------------apropos------------------- */
+    
+.main .imag{
+    width: 320px;
+    height: 440px;
+}
+.biographie-1{
 
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+.biographie-1 span{
+    color: var(--main-color);
+}
+.biographie-2{
+    letter-spacing: 1.5px;
+    line-height: 20px;
+    font-size: 15px;
+    text-align: left;
+}
 
 
 
@@ -927,8 +1000,32 @@ footer .partage{
         text-transform: uppercase;
      }
 
+     /**-------------------apropos--------------------------- */
+     
+.main .imag{
+    width: 280px;
+    height: 370px;
+}
+.biographie-1{
 
- } @media  (max-width: 980px){
+    font-size: 28px;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.biographie-1 span{
+    color: var(--main-color);
+}
+.biographie-2{
+    letter-spacing: 1px;
+    line-height: 20px;
+    font-size: 12px;
+    text-align: left;
+}
+
+ } 
+ @media  (max-width: 980px){
     :root{
         --bg-font:0.09rem;
         --p-font:0.75rem;
@@ -1004,6 +1101,31 @@ footer .partage{
         height: 100%;
         
     }
+
+    /*----------------------------------*apropos-------------------- */
+    
+
+.main .imag{
+    width: 190px;
+    height: 230px;
+}
+.biographie-1{
+
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.biographie-1 span{
+    color: var(--main-color);
+}
+.biographie-2{
+    letter-spacing: 1px;
+    line-height: 15px;
+    font-size: 10px;
+    text-align: left;
+}
    
   
    
@@ -1130,6 +1252,50 @@ footer .partage{
          margin: 0 4px;
          transition: all .6s ease-in-out;
      }*/
+
+     /**--------------------------apropos--------------------------------- */
+     
+.imag{
+    height: 450px;
+    width: 320px;
+    margin-bottom: 15px;
+    
+}
+
+.a-propos-text{
+width: 100%;
+order: 2;
+}
+
+.main{
+    padding: 8% 15%;
+ 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+
+}
+
+
+.biographie-1{
+
+    font-size: 22px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.biographie-1 span{
+    color: var(--main-color);
+}
+.biographie-2{
+    letter-spacing: 1px;
+    line-height: 15px;
+    font-size: 12px;
+    text-align: left;
+}
+
     
   
 
@@ -1149,6 +1315,7 @@ footer .partage{
         .btn{
             padding: 9px 28px;
             margin-left: 20%;
+            text-align: center;
         }
         .home{
             padding: 15% 15%;
@@ -1159,9 +1326,11 @@ footer .partage{
         }
         .home-text h1{
             font-size: 50px;
+            text-align: center;
         }
         .home-text h2{
             font-size: 18px;
+            text-align: center;
         }
         .home-text p{
             text-align: center;

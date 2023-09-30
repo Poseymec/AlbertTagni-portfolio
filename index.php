@@ -28,7 +28,7 @@
 
         <ul class="navbar">
             <li><a href="#section1" class="active">Home</a></li>
-            <li><a href="#section2">Moi</a></li> 
+            <li><a href="#section-moi">Moi</a></li> 
             <li><a href="#section2">Competences</a></li>
             <li><a href="#section3">Education</a></li>
             <li><a href="#section4">Portfolio</a></li>
@@ -73,6 +73,37 @@
 
 
     </section>
+
+    <!-----------------------------------------------------section apropos------------------------------------------------------>
+    <section id="section-moi" class="  a-propos">
+    <div class="divider"></div>
+        <div class="heading">
+            <h2>A propos de moi</h2>
+        </div>
+        <div class="  main">
+    
+            <div class=" a-propos-text">
+                <h3 class="biographie-1"><span>Vendeur</span>  &  <span>Developpeur Web Autodidacte</span> </h3>
+                <p class="biographie-2">
+                    
+                    Salut, je m'appelle TAGNI GOUACHI ALBERT PIRES, un développeur web junior passionné par les nouvelles technologies.
+                    Je suis né au Cameroun, dans la région de l'Ouest et   j'ai grandi  a douala dans un environnement bilingue. 
+                    J'ai appris le français et l'anglais (beaucoup plus le français)  à l'école primaire et au lycée, où j'ai 
+                    obtenu mon baccalauréat de série D en 2018. Depuis, je travaille comme vendeur dans une boutique de téléphones
+                    portables et d'appareils électroniques à Douala-Bonaberi. Mais ce n'est pas tout. Le soir, après le travail,
+                    je me forme en autodidacte en programmation informatique. J'ai appris à maîtriser plusieurs langages de programmation, 
+                    tels que HTML, CSS, JavaScript,PHP et d'autres outils de programmation  . Je suis capable de créer des sites web dynamiques et interactifs, qui répondent 
+                    aux besoins des utilisateurs. Je vous invite à découvrir mes projets personnels sur mon portfolio, où vous pourrez 
+                    voir mes réalisations et mes compétences. N'hésitez pas à me contacter si vous avez des questions ou des propositions
+                    de collaboration. Je serai ravi de discuter avec vous. Merci de votre visite et à bientôt ! 
+                </p>
+            </div>
+            <img  src="image/albert16.jpg"  class="imag" alt=""  >
+        </div>
+
+        </section>
+ 
+   
 
 
     <!----------------------------section 2 competences----------------------------------->
