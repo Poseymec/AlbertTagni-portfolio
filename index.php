@@ -27,7 +27,7 @@
         <a href="#" class="logo"><span>A</span>lbert<span>.</span></a>
 
         <ul class="navbar">
-            <li><a href="#section1" class="active">Home</a></li>
+            <li><a href="#section1" class="active">Accueil</a></li>
             <li><a href="#section-moi">Moi</a></li> 
             <li><a href="#section2">Competences</a></li>
             <li><a href="#section3">Education</a></li>
