@@ -442,7 +442,7 @@ function isPhone($variable){
         <div class="heading"> 
             <h2>Contact</h2>
         </div>
-    <form  id="contactForm" action="php/contact.php" method="POST" enctype="multipart/form-data">
+    <form  id="contactForm" action="#" method="POST" enctype="multipart/form-data">
         <div id="merci" style="color:#005b8f; font-size:30px; text-align:center">
         </div>
         
@@ -453,7 +453,7 @@ function isPhone($variable){
                             <label for="firstname" class="form-label">Nom <span class="blue">*</span></label>
                             <input id="firstname" type="text" name="nom" class="form-control"  value=""  >
                         </div>
-                        <p id="nomErreur"></p>
+                       <!-- <p id="nomErreur"></p>-->
                       
                     </div>
                     <div class="col-md-6 col">
@@ -461,7 +461,7 @@ function isPhone($variable){
                             <label for="lastname" class="form-label">Prénom <span class="blue">*</span></label>
                             <input id="name" type="text" name="prenom" class="form-control"   value=""  >
                         </div>
-                        <p id="prenomErreur"></p>
+                       <!-- <p id="prenomErreur"></p>-->
                      
                     </div>
                 </div>
@@ -471,7 +471,7 @@ function isPhone($variable){
                             <label for="email" class="form-label">Email <span class="blue">*</span></label>
                             <input id="email" type="text" name="email" class="form-control" value=""   >
                         </div>
-                        <p id="emailErreur"></p>
+            <!--<p id="emailErreur"></p>-->
                        
                     </div>
                     <div class="col-md-6 col">
@@ -479,7 +479,7 @@ function isPhone($variable){
                              <label for="phone" class="form-label">Téléphone</label>
                              <input id="phone" type="text" name="phone" class="form-control"   value=""  >
                             </div>
-                            <p id="phoneErreur"></p>
+                            <!--<p id="phoneErreur"></p>-->
                        
                     </div>
                 </div>
@@ -489,7 +489,7 @@ function isPhone($variable){
                             <label for="message" class="form-label">Message <span class="blue">*</span></label>
                             <textarea id="message" name="message" class="form-control"    value="" ></textarea>
                         </div>
-                        <p id="messageErreur"></p>
+                       <!-- <p id="messageErreur"></p>-->
                        
                     </div>
                 </div>
