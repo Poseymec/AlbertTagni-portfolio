@@ -23,10 +23,10 @@
   {
     --bg-color:#171717;
     --text-color:#ffffff;
-    --main-color:#ec9909;
+    --main-color:#ca8205;
 
     --big-font:5rem;
-    --p-font:1rem;
+    --p-font:1.25rem;
 }
 a{
     text-decoration: none;
@@ -34,7 +34,7 @@ a{
 h2{
     text-align: center;
     font-family: 'rubik';
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 section, header{
     margin-bottom: 20px;
@@ -114,14 +114,14 @@ header
 .logo 
 {
     color: var(--text-color);
-    font-size: 41px;
-    font-weight: 600;
+    font-size: 40px;
+    font-weight: 700;
 }
 
 .logo span{
     color: var(--main-color);
     text-transform: uppercase;
-    font-size: 41px;
+    font-size:41px;
     font-weight: 600;
 }
 
@@ -134,7 +134,7 @@ header
  .navbar a
  {
      font-size: var(--p-font);
-     font-weight: 500;
+     font-weight: 400;
      color: var(--text-color);
      margin: 0 25px;
      
@@ -203,28 +203,30 @@ header
     height: 100%;
     object-fit: contain;
    
-    box-shadow: 5px 5px 5px 5px black;
+    box-shadow: 2px 2px 7px 7px black;
  }
 
  .home-text{
-    padding-left:30px;
+    text-align: center;
+   /* padding-left:30px;*/
+   
  }
 
  .home-text h2{
     padding: 15px 25px;
     margin-top: 2px;
    
-    text-align:left;
+    text-align:center;
    
     color: var(--text-color);
     font-weight: 700;
-    font-size: 25px;
+    font-size: 30px;
     text-transform: uppercase;
  }
  .home-text h2 span 
  {
     color: var(--main-color);
-    font-size: 20px;
+    font-size: 26px;
     
 
  }
@@ -237,19 +239,24 @@ header
  .home-text p
  {
     font-size: var(--p-font);
-    font-weight: 300;
+    font-weight: 500;
     color: #c3c3c3;
     line-height: 20px;
     margin-bottom: 30px;
+    text-align: center;
+ }
+ .home-text .btn0{
+    text-align: center;
  }
 
  .btn{
-    display: inline-block;
+   /* display: inline-block;*/
     padding: 14px 34px;
+    text-align: center;
     background: var(--main-color);
     color: var(--text-color);
     border: 2px solid var(--main-color);
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
     border-radius: 8px;
     transition: all 0.6s ease-in-out;
@@ -264,13 +271,11 @@ header
 
  .home .home-text .partage
  {
-    position: absolute;
-    
-    margin-top: 15px;
-   
-    /*left: 11.5%;*/
+ 
+    margin-top: 20px;
     display: flex;
     align-items: center;
+    justify-content: center;
 
  }
  .social i
@@ -307,8 +312,8 @@ header
 }
 
 .imag{
-    height: 490px;
-    width: 350px;
+    height: 450px;
+    width: 340px;
 }
 
 .a-propos-text{
@@ -336,7 +341,7 @@ width: 650px;
     text-transform: capitalize;
     margin-bottom: 40px;
     letter-spacing: 1.5px;
-    text-align: center;
+   
 }
 .biographie-1 span{
     color: var(--main-color);
@@ -786,6 +791,11 @@ footer .partage{
  /**media pour le resolution d'ecran */
 
  @media  (max-width: 1850px){
+    :root{
+        --bg-font:5rem;
+        --p-font:1rem;
+        transition: .2s;
+    }
     header{
         padding: 15px 7%;
         transition: .2s;
@@ -798,13 +808,13 @@ footer .partage{
         transition: .2S;
     }
     .btn{
-        display: inline-block;
+       display: inline-block;
         padding: 10px 30px;
         background: var(--main-color);
         color: var(--text-color);
         border: 2px solid var(--main-color);
         font-size: 15px;
-        font-weight: 500;
+        font-weight: 400;
         border-radius: 8px;
         transition: all 0.6s ease-in-out;
      }
@@ -820,7 +830,7 @@ footer .partage{
         border: 1px solid #3b3b3b;
         border-radius: 50%;
         color: var(--text-color);
-        font-size: 17px;
+        font-size: 15px;
         margin: 0 5px;
         transition: all .6s ease-in-out;
     }
@@ -828,7 +838,7 @@ footer .partage{
     .partage{
     
         transition: .2s;
-        margin-top:14px;
+        margin-top:20px;
     }
 
  }
@@ -872,8 +882,8 @@ footer .partage{
        display: inline-flex;
        align-items: center;
        justify-content: center;
-       height: 30px;
-       width: 30px;
+       height: 40px;
+       width: 40px;
        background: linear-gradient(130.08deg,#000000 0% ,#7c7b79 100%);
        
         border: 1px solid #3b3b3b;
@@ -885,8 +895,8 @@ footer .partage{
     }
   
     :root{
-        --bg-font:2rem;
-        --p-font:0.90rem;
+        --bg-font:3rem;
+        --p-font:0.95rem;
         transition: .2s;
     }
 
@@ -902,16 +912,17 @@ footer .partage{
     text-transform: capitalize;
     margin-bottom: 40px;
     letter-spacing: 1.5px;
-    text-align: center;
+  text-align: center;
 }
 .biographie-1 span{
     color: var(--main-color);
 }
 .biographie-2{
-    letter-spacing: 1.5px;
-    line-height: 20px;
-    font-size: 15px;
-    text-align: left;
+    letter-spacing: 0.25px;
+    line-height: 23px;
+    font-size: 20px;
+    text-align: justify;
+  
 }
 
 
@@ -937,8 +948,8 @@ footer .partage{
         margin: 0 15px;
    }
    :root{
-    --bg-font:0.30rem;
-    --p-font:0.70rem;
+    --bg-font:2rem;
+    --p-font:0.95rem;
     transition: .2s;
     }
     .home .home-text .partage{
@@ -947,8 +958,8 @@ footer .partage{
         transition: .2s;
     }
     .home-img{
-        height: 300px;
-        width: 300px;
+        height: 400px;
+        width: 350px;
     }
     .home-img img{
        
@@ -956,17 +967,17 @@ footer .partage{
         height: 100%;
     }
     .home{
-        padding: 8% 8%;
+        padding: 7% 7%;
        /* height: 110vh;*/
     }
     .btn{
-        display: inline-block;
+       /* display: inline-block;*/
         padding: 8px 25px;
         background: var(--main-color);
         color: var(--text-color);
         border: 2px solid var(--main-color);
-        font-size: 12px;
-        font-weight: 400;
+        font-size: 20px;
+        font-weight: 500;
         border-radius: 8px;
         transition: all 0.6s ease-in-out;
      }
@@ -977,38 +988,39 @@ footer .partage{
        display: inline-flex;
        align-items: center;
        justify-content: center;
-       height: 25px;
-       width: 25px;
+       height: 40px;
+       width: 40px;
        background: linear-gradient(130.08deg,#000000 0% ,#7c7b79 100%);
        
         border: 1px solid #3b3b3b;
         border-radius: 50%;
         color: var(--text-color);
-        font-size: 12px;
+        font-size: 20px;
         margin: 0 5px;
         transition: all .6s ease-in-out;
     }
     .home-text h2{
-        padding: 15px 25px;
+       text-align: center;
         margin-top: 2px;
        
-        text-align:left;
+       
        
         color: var(--text-color);
         font-weight: 600;
-        font-size: 20px;
+        font-size: 30px;
         text-transform: uppercase;
      }
 
      /**-------------------apropos--------------------------- */
      
 .main .imag{
-    width: 280px;
-    height: 370px;
+    width: 300px;
+    height: 400px;
+    margin-left: 5px;
 }
 .biographie-1{
 
-    font-size: 28px;
+    font-size:30px;
     text-transform: capitalize;
     margin-bottom: 40px;
     letter-spacing: 1px;
@@ -1018,28 +1030,36 @@ footer .partage{
     color: var(--main-color);
 }
 .biographie-2{
-    letter-spacing: 1px;
-    line-height: 20px;
-    font-size: 12px;
-    text-align: left;
+    letter-spacing: 0.25px;
+    line-height: 24px;
+    font-size: 18px;
+    text-align: justify;
 }
 
  } 
  @media  (max-width: 980px){
     :root{
-        --bg-font:0.09rem;
-        --p-font:0.75rem;
+        --bg-font:1rem;
+        --p-font:0.95rem;
         transition: .2s;
     }
-     
+    
    .home .home-text .partage{
         margin-top: 12px;
-        font-size: 12px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .partage .social i{
+        height: 35px;
+        width: 35px;
+        font-size: 20px;
+
     }
     .home-text h1
     {
-       font-size:55px;
-       margin: 8px 0;
+       font-size: var(--big-font);
+       text-align: center;
+      
     }
     .btn{
         display: inline-block;
@@ -1047,20 +1067,20 @@ footer .partage{
         background: var(--main-color);
         color: var(--text-color);
         border: 2px solid var(--main-color);
-        font-size: 12px;
+        font-size: 20px;
         font-weight: 300;
         border-radius: 8px;
         transition: all 0.6s ease-in-out;
      }
      .home-text h2{
-        padding: 15px 25px;
+       
         margin-top: 2px;
        
-        text-align:left;
+        text-align:center;
        
         color: var(--text-color);
         font-weight: 600;
-        font-size: 20px;
+        font-size: 30px;
         text-transform: uppercase;
      }
     .social i
@@ -1081,7 +1101,7 @@ footer .partage{
     }
 
     .home{
-        padding: 10% 4%;
+        padding: 8% 2%;
        /* height: 100vh;*/
     }
     header{
@@ -1092,8 +1112,8 @@ footer .partage{
  
     .home-img{
        
-        height: 250px;
-        width: 250px;
+        height: 370px;
+        width: 320px;
     }
     .home-img img{
        
@@ -1106,15 +1126,16 @@ footer .partage{
     
 
 .main .imag{
-    width: 190px;
-    height: 230px;
+    width: 280px;
+    height: 400px;
+    margin-left:10px;
 }
 .biographie-1{
-
+    padding:auto;
     font-size: 25px;
     text-transform: capitalize;
-    margin-bottom: 40px;
-    letter-spacing: 1px;
+    margin-bottom: 50px;
+    letter-spacing: 0.5px;
     text-align: center;
 }
 .biographie-1 span{
@@ -1122,13 +1143,36 @@ footer .partage{
 }
 .biographie-2{
     letter-spacing: 1px;
-    line-height: 15px;
-    font-size: 10px;
-    text-align: left;
+    line-height: 22px;
+    font-size: 18px;
+    text-align: justify;
 }
+   /* ------------------------------section 2 competences-------------------------------*/
+
+#section2 h2{
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+.LaGrid2 
+{
    
-  
-   
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+#section2 .cadre
+{
+    position: relative;
+    width: 200px;
+    height: 250px;
+    background-color:var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 20px;
+}
+
 
  
   }
@@ -1158,6 +1202,11 @@ footer .partage{
        align-items: center;
        justify-content: center;
    
+    }
+    .social i{
+        height: 40px;
+        width: 40px;
+        font-size: 20px;
     }
 
     
@@ -1205,12 +1254,12 @@ footer .partage{
  
         
     .home-img{
-        height: 300px;
-        width: 300px;
+        height: 400px;
+        width: 350px;
         margin-top: 30px;
     }
     .home{
-        padding: 8% 15%;
+        padding: 10% 5%;
         margin-top: 5px;
         display: flex;
         justify-content: center;
@@ -1225,16 +1274,16 @@ footer .partage{
     }
    
     .btn{
-        display: inline-flex;
-        padding: 8px 20px;
+       
+        text-align: center;
         background: var(--main-color);
         color: var(--text-color);
         border: 2px solid var(--main-color);
-        font-size: 10px;
-        font-weight: 200;
+        font-size: 20px;
+        font-weight: 500;
         border-radius: 8px;
         transition: all 0.6s ease-in-out;
-        margin-left: 28.5%;
+        
      }
    /*  .social i
      {
@@ -1256,8 +1305,8 @@ footer .partage{
      /**--------------------------apropos--------------------------------- */
      
 .imag{
-    height: 450px;
-    width: 320px;
+    height: 500px;
+    width: 400px;
     margin-bottom: 15px;
     
 }
@@ -1268,7 +1317,7 @@ order: 2;
 }
 
 .main{
-    padding: 8% 15%;
+    padding: 10% 5%;
  
     display: flex;
     justify-content: center;
@@ -1280,7 +1329,7 @@ order: 2;
 
 .biographie-1{
 
-    font-size: 22px;
+    font-size: 25px;
     text-transform: capitalize;
     margin-bottom: 30px;
     letter-spacing: 1px;
@@ -1291,11 +1340,41 @@ order: 2;
 }
 .biographie-2{
     letter-spacing: 1px;
-    line-height: 15px;
-    font-size: 12px;
-    text-align: left;
+    line-height: 23px;
+    font-size: 20px;
+    text-align: justify;
+}
+#section2 h2{
+    color: var(--main-color);
+    margin-bottom: 10px;
 }
 
+.LaGrid2 
+{
+   
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+#section2 .cadre
+{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    background-color:var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 20px;
+}
+
+
+:root{
+        
+    --bg-font:1.5rem;
+    --p-font:1rem;
+    transition: .2s;
+}
     
   
 
@@ -1304,32 +1383,32 @@ order: 2;
   @media  (max-width: 610px){
 
     header{
-        padding: 1% 3%;
+        padding: 1% 6%;
     }
     :root{
         
-            --bg-font:0.5rem;
-            --p-font:10px;
+            --bg-font:1rem;
+            --p-font:1rem;
             transition: .2s;
         }
         .btn{
             padding: 9px 28px;
-            margin-left: 20%;
+           
             text-align: center;
         }
         .home{
-            padding: 15% 15%;
+            padding: 10% 7%;
             margin-top: 8px;
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
         }
         .home-text h1{
-            font-size: 50px;
+          /*  font-size: 50px;*/
             text-align: center;
         }
         .home-text h2{
-            font-size: 18px;
+            font-size: 20px;
             text-align: center;
         }
         .home-text p{
@@ -1337,8 +1416,8 @@ order: 2;
         }
 
         .home-img{
-            width: 200px;
-            height: 250px;
+            width: 350px;
+            height: 450px;
         }
         footer{
             width:100%;
@@ -1347,6 +1426,150 @@ order: 2;
         
         
     }
+    @media  (max-width: 540px){
+        header{
+            padding: 1% 10%;
+        }
+        :root{
+            
+                --bg-font:0.8rem;
+                --p-font:1rem;
+                transition: .2s;
+            }
+            .home{
+                padding: 11% 2%;
+                margin-top: 8px;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            .home-text h1{
+              /*  font-size: 50px;*/
+                text-align: center;
+            }
+            .home-text h2{
+                font-size: 20px;
+                text-align: center;
+            }
+            .home-text p{
+                text-align: center;
+            }
+    
+            .home-img{
+                width: 300px;
+                height: 400px;
+            }
+            footer{
+                width:100%;
+            }
+            .navbar{
+                position: absolute;
+                width: 32%;
+                height: 300px;
+                padding: 50px 10px;
+                top:0;
+                bottom: 0;
+                margin-bottom: 40px;
+                right:-100%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                font-size: var(--p-font);
+                background: #2d2d2d;
+                transition: all 0.4s ease-in-out;
+            }
+         
+            .menu-btn
+            {
+           
+             display: flex;
+             align-items:  baseline;
+            }
+            #menu-icon
+            {
+            cursor: pointer;
+            font-size: 50px;
+            margin-left: 10px;
+            color: var(--main-color);
+            z-index: 6;
+            }
+            .navbar a{
+                display: block;
+                color: #c3c3c3;
+                padding: 0px 0px 8px 0px;
+               
+                font-weight:300;
+            }
+        
+            .navbar.open{
+                right: 0;
+            }
+            
+        }
+        @media  (max-width: 490px){
+            header{
+                padding: 1% 10%;
+            }
+            :root{
+                
+                    --bg-font:0.9rem;
+                    --p-font:0.7rem;
+                    transition: .2s;
+                }
+                .home{
+                    padding: 11% 0%;
+                    margin-top: 8px;
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                }
+                .home-text h1{
+                   font-size: 50px;
+                    text-align: center;
+                }
+                .home-text h2{
+                    font-size: 18px;
+                    text-align: center;
+                }
+                .home-text p{
+                    text-align: center;
+                    font-size: var(--p-font);
+                }
+        
+                .home-img{
+                    width: 250px;
+                    height: 300px;
+                }
+                footer{
+                    width:100%;
+                }
+
+                /*-----------------------apropos-----*/
+                .main .imag{
+                    width: 300px;
+                    height: 420px;
+                }
+                .biographie-1{
+                
+                    font-size: 25px;
+                    text-transform: capitalize;
+                    margin-bottom: 40px;
+                    letter-spacing: 1.5px;
+                  text-align: center;
+                }
+                .biographie-1 span{
+                    color: var(--main-color);
+                }
+                .biographie-2{
+                    letter-spacing: 0.25px;
+                    line-height: 23px;
+                    font-size: 15px;
+                    text-align: justify;
+                  
+                }
+
+        }
+
     .home-img img{
         animation: imgg 2s ease-in-out infinite;
         animation-delay: 2s;
