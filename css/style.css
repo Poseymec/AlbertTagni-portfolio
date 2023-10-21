@@ -655,7 +655,7 @@ section4 .heading h2
     
 }
 .section5 h2{
-   /* width: 100%;*/
+
     color: var(--main-color);
     font-size: 36px;
     text-align: center;
@@ -721,7 +721,7 @@ section4 .heading h2
   
 }
 
-#messageErreur{
+/*#messageErreur{
     margin-top: 50px;
    
 }
@@ -731,7 +731,7 @@ section4 .heading h2
     font-style: italic;
     font-size: 18px;
     color: #d82c2e;
-}
+}*/
 
 
 
@@ -1650,6 +1650,312 @@ order: 2;
                   
                 }
 
+        }
+        @media(max-width:325px){
+            header{
+                padding: 1% 10%;
+                max-width: 100%;
+              /*  overflow-x: hidden;*/
+            }
+           
+          .navbar{
+                position: absolute;
+                width: 50%;
+                height: 350px;
+                padding: 50px 10px;
+                top:0;
+                bottom: 0;
+                margin-bottom: 40px;
+                right:-100%;
+                display: flex;
+                flex-direction: column;
+                background: #2d2d2d;
+                transition: all 0.4s ease-in-out;
+            }
+            :root{
+                
+                    --bg-font:0.7rem;
+                    --p-font:0.5rem;
+                    transition: .2s;
+                }
+                .home{
+                    padding: 11% 0%;
+                    margin-top: 8px;
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                }
+                .home-text h1{
+                   font-size: 50px;
+                    text-align: center;
+                }
+                .home-text h2{
+                    font-size: 18px;
+                    text-align: center;
+                }
+                .home-text p{
+                    text-align: center;
+                    font-size: 12px;
+                }
+        
+                .home-img{
+                    width: 250px;
+                    height: 300px;
+                }
+                footer{
+                   max-width:100%;
+                   overflow-x: hidden;
+                }
+
+                /*-----------------------apropos-----*/
+                .main .imag{
+                    width: 300px;
+                    height: 420px;
+                }
+                .biographie-1{
+                
+                    font-size: 22px;
+                    text-transform: capitalize;
+                    margin-bottom: 40px;
+                    letter-spacing: 1.5px;
+                  text-align: center;
+                }
+                .biographie-1 span{
+                    color: var(--main-color);
+                }
+                .biographie-2{
+                    letter-spacing: 0.25px;
+                    line-height: 23px;
+                    font-size: 14px;
+                    text-align: justify;
+                  
+                }
+
+                /* ------------contact------------------------*/
+                .section5{
+                    background :var(--bg-color) ;
+                    max-width: 100%;
+                    overflow-x: hidden;
+                    margin-left: 0%;
+                    
+                }
+                .section5 h2{
+                   /* width: 100%;*/
+                    color: var(--main-color);
+                    font-size: 36px;
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+                .container{
+                   width: 100%;
+                   padding: 30px;
+                
+                
+                
+                }
+
+                /*----------------section 2*/
+                #section2{
+                    width: 100%;
+                }
+                
+                #section2 h2{
+                    color: var(--main-color);
+                    margin-bottom: 10px;
+                }
+                
+                .LaGrid2 
+                {
+                   
+                    display: flex;
+                    justify-content: center;
+                    gap: 50px;
+                }
+                #section2 .cadre
+                {
+                    position: relative;
+                    width: 250px;
+                    height: 300px;
+                    background-color:var(--bg-color);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center; 
+                    margin: 40px;
+                }
+                .cadre:before
+                {
+                    content: '';
+                    position: absolute;
+                    top: -2px;
+                    right: -2px;
+                    bottom: -2px;
+                    left: -2px;
+                    background: #fff;
+                    z-index: -1;
+                }
+                .cadre:after
+                {
+                    content: '';
+                    position: absolute;
+                    top: -2px;
+                    right: -2px;
+                    bottom: -2px;
+                    left: -2px;
+                    background: #fff;
+                    z-index: -2;
+                    filter: blur(4px);
+                }
+                
+                .cadre:before,
+                .cadre:after
+                {
+                    background: linear-gradient(230deg,var(--main-color),var(--bg-color),var(--main-color));
+                }
+                
+                
+                #section2 .cadre .glass
+                {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 50%;
+                    height: 100%;
+                    display: block;
+                    background-color: rgba(79, 78, 78, 0.1);
+                    pointer-events: none;
+                }
+                
+                
+                #section2  .cadre .pourcentage
+                {
+                    position: relative;
+                    height: 150px;
+                    width: 150px;
+                }
+                
+                
+                #section2  .cadre .pourcentage svg
+                {
+                    position: relative;
+                    width: 150px;
+                    height: 150px;
+                    transform: rotate(270deg); 
+                }
+                 #section2 .pourcentage svg circle
+                 {
+                    width: 100%;
+                    height: 100%;
+                    fill: transparent;
+                    stroke-width: 5;
+                    stroke: #0c0c0c;
+                    transform: translate(5px,5px);   
+                }
+                #section2 .cadre .pourcentage svg circle:nth-child(2)
+                {
+                    stroke: var(--clr);
+                    stroke-dasharray: 440;
+                    stroke-dashoffset: calc(440 - (440* var(--numero))/100);
+                    
+                    /* ---animation qui permet de faire apparaitre les niveaux de competence*/
+                
+                    opacity: 0;
+                    animation: fadeIn 1s linear forwards;
+                    animation-delay:2.5s ;
+                }
+                @keyframes fadeIn
+                {
+                    0%
+                    {
+                        opacity: 0;
+                    }
+                    100%
+                    {
+                        opacity: 1;
+                    }
+                }
+                .point
+                {
+                    position: absolute;
+                    inset: 5px;
+                    z-index: 1;
+                    transform: rotate(calc(3.6deg * var(--numero)));
+                    animation: animatePoint 2s linear forwards;
+                }
+                @keyframes animatePoint
+                {
+                    0%
+                    {
+                        transform:rotate(0deg)
+                    }
+                    100%
+                    {
+                        transform:rotate(calc(3.6deg * var(--numero)));
+                    }
+                        
+                }
+                
+                
+                .point::before
+                {
+                    content: '';
+                    position: absolute;
+                    top: -7.5px;
+                    left: 50%;
+                    background: var(--clr);
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    transform: translateX(-50%);
+                    box-shadow: 0 0 10px var(--clr),
+                    0 0 30px var(--clr);
+                
+                }
+                
+                .cadre .text
+                {
+                    position: absolute;
+                    inset: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    
+                }
+                .cadre .text h3
+                {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: var(--man-color);
+                    font-weight: 700;
+                    font-size: 2em;
+                    /* animation qui permet de faire apparaitre les elements*/
+                    opacity: 0;
+                    animation: fadeIn 1s linear forwards;
+                    animation-delay:2.5s ;
+                    
+                }
+                .cadre .text h3 span
+                {
+                    font-weight: 300;
+                    font-size: 0.5em;
+                }
+                
+                .cadre .text h4
+                {
+                    font-weight: 300;
+                    font-size: 0.8em;
+                    line-height: 2px;
+                    margin-top: 5px;
+                    text-transform: uppercase;
+                    color: rgba(255, 255, 255, 0.75);
+                    /* animation qui permet de faire apparaitre les elements*/
+                    opacity:0;
+                    animation: fadeIn 1s linear forwards;
+                    animation-delay:2.5s ;
+                }
+                
+    
         }
 
     .home-img img{
