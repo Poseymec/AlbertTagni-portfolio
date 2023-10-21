@@ -26,7 +26,7 @@
     --main-color:#ca8205;
 
     --big-font:5rem;
-    --p-font:1.25rem;
+    --p-font:1rem;
 }
 a{
     text-decoration: none;
@@ -36,10 +36,12 @@ h2{
     font-family: 'rubik';
     font-size: 2.5rem;
 }
-section, header{
+#section1,#section2,#section3,#section4, header footer{
     margin-bottom: 20px;
 
-   /* height: 100vh;*/
+  max-width: 100%;
+  overflow-x: hidden;
+  
 
 
 
@@ -96,13 +98,12 @@ header
 {
     position: fixed;
     top: 0;
-    right: 0;
     width: 100%;
    z-index: 1000;
     display: flex;
     text-align: center;
     justify-content: space-between;
-    padding: 25px 15%;
+    padding: 10px 10%;
     background:var(--bg-color);
     transition: all ease .45s;
     margin-bottom: 10px;
@@ -170,11 +171,11 @@ header
 .home
 {
     position:relative;
-     padding: 4% 15%;
+     padding: 8% 15%;
     transition: .2S;
   
     
-    width: 100%;
+   width: 100%;
    /* min-height: 100vh;*/
     overflow-x: hidden;
     margin-top: 2%;
@@ -353,6 +354,10 @@ width: 650px;
     text-align: left;
 }
  /* ------------------------------section 2 competences-------------------------------*/
+
+#section2{
+    width: 100%;
+}
 
 #section2 h2{
     color: var(--main-color);
@@ -560,6 +565,7 @@ width: 650px;
 #section3
 {
     background-color: var(--bg-color);
+    width: 100%;
    
 }
 .education{
@@ -607,10 +613,14 @@ width: 650px;
 }
 
 
+
+
 /*------------------------------------------section---------------------------------------- 4*/
+#Ssection4{
+    width: 100%;
+}
 
-
- #section4 .heading h2
+section4 .heading h2
 {
     color: var(--main-color);
     margin-bottom: 30px;
@@ -641,6 +651,8 @@ width: 650px;
  /*formulaire de contact*/
 .section5{
     background :var(--bg-color) ;
+    width: 100%;
+    
 }
 .section5 h2{
    /* width: 100%;*/
@@ -762,7 +774,8 @@ input[type='submit']
 
 footer
 {
-   
+   width: 100%;
+ 
    background-color: #333;
    padding: 20px 0 40px;
    text-align: center;
@@ -790,15 +803,21 @@ footer .partage{
 
  /**media pour le resolution d'ecran */
 
- @media  (max-width: 1850px){
+ @media  (max-width: 2000px){
+    body{
+        box-sizing: border-box;
+        overflow-x: hidden;
+      
+    }
     :root{
         --bg-font:5rem;
         --p-font:1rem;
         transition: .2s;
     }
     header{
-        padding: 15px 7%;
+        padding: 15px 10%;
         transition: .2s;
+        
     }
     .home{
         padding: 10% 10%;
@@ -840,18 +859,69 @@ footer .partage{
         transition: .2s;
         margin-top:20px;
     }
+ 
 
  }
 
  @media  (max-width: 1400px){
-    header{
-        padding: 15px 4%;
-        transition: .2s;
+    body{
+      width: 100%;
+        
+        overflow-x: hidden;
+      
     }
+    header{
+        padding: 15px 3%;
+        transition: .2s;
+   
+
+       
+       
+      
+    }
+   /* section, header,footer{
+        margin-bottom: 20px;
+    
+      max-width: 100%;
+      overflow-x: hidden;
+    
+    
+    
+    }*/
+    .logo 
+{
+    color: var(--text-color);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.logo span{
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-size:38px;
+    font-weight: 600;
+}
+
+.navbar
+{
+    display: flex;
+
+
+}
+ .navbar a
+ {
+     font-size: var(--p-font);
+     font-weight: 400;
+     color: var(--text-color);
+     margin: 0 15px;
+     
+     transition: all ease .60s;
+    }
+    
     .home{
         padding: 8% 10%;
         transition: .2S;
-        height: max-content;
+       /* height: max-content;*/
               
     }
     .home-img{
@@ -940,10 +1010,22 @@ footer .partage{
         margin: 40px;
     }
 
+    footer{
+       width: 100%;
+    }
+
 
  }
 
+
+
  @media (max-width: 1118px){
+    body{
+        box-sizing: border-box;
+        overflow-x: hidden;
+        
+      
+    }
    .navbar a{
         margin: 0 15px;
    }
@@ -1397,7 +1479,7 @@ order: 2;
             text-align: center;
         }
         .home{
-            padding: 10% 7%;
+            padding: 10% 4%;
             margin-top: 8px;
             display: flex;
             justify-content: center;
