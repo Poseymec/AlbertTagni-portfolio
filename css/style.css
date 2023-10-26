@@ -544,7 +544,7 @@ width: 650px;
 .cadre .text h4
 {
     font-weight: 300;
-    font-size: 1em;
+    font-size: 0.9em;
     line-height: 2px;
     margin-top: 5px;
     text-transform: uppercase;
@@ -585,11 +585,11 @@ width: 650px;
     margin: 0 auto;
     text-align: center;
     padding:40px;
-    background: #edeff1;
+    background:var(--bg-color);
     border-radius:5px ;
     border: 1px solid #ccc;
     margin-bottom: 15px;
-    color: #888;
+    color: rgb(157, 154, 154);
     font-size: var(--p-font);
 }
 .education-block div{
@@ -686,13 +686,13 @@ article:hover
 .overlay p{
     text-align: center;
     margin-bottom: 15px;
-    color: #000;
-    font-weight: bold;
+    color: #000000;
+    font-weight:1000;
     font-size: 21px;
 }
 
 .botton-2{
-    color: #fff;
+    color: #e2dbdb;
     background-color:  rgb(255, 145, 0);
     padding: 6px 20px;
     border-radius: 3px;
