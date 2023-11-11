@@ -61,7 +61,7 @@ form.addEventListener('submit', (event) => {
   xhr.send(JSON.stringify(data));
 });*/
 
-document.getElementById('contactForm').addEventListener('submit',function(e){
+/*document.getElementById('contactForm').addEventListener('submit',function(e){
 
   e.preventDefault();
     
@@ -103,7 +103,7 @@ document.getElementById('contactForm').addEventListener('submit',function(e){
      }
   };
 
-  xhr.open("POST","https://formspree.io/f/xyyqagww",true);
+  xhr.open("POST","",true);
   xhr.responseType='json';
  // xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
   xhr.send(data );
@@ -121,7 +121,7 @@ document.getElementById('contactForm').addEventListener('submit',function(e){
 
 
 
-})
+})*/
 
 //fonction qui permet de retirer un message apres un temps defini
 

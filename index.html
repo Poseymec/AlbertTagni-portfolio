@@ -368,7 +368,7 @@
         <div class="heading"> 
             <h2>Contact</h2>
         </div>
-    <form  id="contactForm" action="https://formspree.io/f/xyyqagww" method="POST" enctype="multipart/form-data">
+    <form  id="contactForm" action="https://formspree.io/f/xyyqagww" method="POST" >
         <div id="merci" style="color:#005b8f; font-size:30px; text-align:center">
         </div>
         
@@ -377,7 +377,7 @@
                     <div class="col-md-6 col">
                         <div class="inputBox">
                             <label for="firstname" class="form-label">Nom <span class="blue">*</span></label>
-                            <input id="firstname" type="text" name="nom" class="form-control"  value=""  >
+                            <input id="firstname" type="text" name="nom" class="form-control"  value="" required >
                         </div>
                        <!-- <p id="nomErreur"></p>-->
                       
@@ -385,7 +385,7 @@
                     <div class="col-md-6 col">
                         <div class="inputBox">
                             <label for="lastname" class="form-label">Prénom <span class="blue">*</span></label>
-                            <input id="name" type="text" name="prenom" class="form-control"   value=""  >
+                            <input id="name" type="text" name="prenom" class="form-control"   value="" required>
                         </div>
                        <!-- <p id="prenomErreur"></p>-->
                      
@@ -395,7 +395,7 @@
                     <div class="col-md-6 col">
                         <div class="inputBox">
                             <label for="email" class="form-label">Email <span class="blue">*</span></label>
-                            <input id="email" type="text" name="email" class="form-control" value=""   >
+                            <input id="email" type="text" name="email" class="form-control" value=""  required >
                         </div>
             <!--<p id="emailErreur"></p>-->
                        
@@ -403,7 +403,7 @@
                     <div class="col-md-6 col">
                         <div class="inputBox">
                              <label for="phone" class="form-label">Téléphone</label>
-                             <input id="phone" type="text" name="phone" class="form-control"   value=""  >
+                             <input id="phone" type="text" name="phone" class="form-control"   value="" required >
                             </div>
                             <!--<p id="phoneErreur"></p>-->
                        
@@ -413,7 +413,7 @@
                     <div class="col-md-12 col">
                         <div class="inputBox textarea">
                             <label for="message" class="form-label">Message <span class="blue">*</span></label>
-                            <textarea id="message" name="message" class="form-control"    value="" ></textarea>
+                            <textarea id="message" name="message" class="form-control"    value=""  required></textarea>
                         </div>
                        <!-- <p id="messageErreur"></p>-->
                        
@@ -422,7 +422,7 @@
                 <div class="row row2">
                     <div class="col-md-12 col" >
                         <input type="submit" value="envoyer">
-                        <input type="hidden" name="_next" value="index.html">
+                        <input type="hidden" name="_next" value="">
                     </div>
                 </div>
             </div>
