@@ -103,7 +103,7 @@ document.getElementById('contactForm').addEventListener('submit',function(e){
      }
   };
 
-  xhr.open("POST","php/contact.php",true);
+  xhr.open("POST","https://formspree.io/f/xyyqagww",true);
   xhr.responseType='json';
  // xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
   xhr.send(data );
