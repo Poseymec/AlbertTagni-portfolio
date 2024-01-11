@@ -842,10 +842,11 @@ footer
    bottom: 0;
  
 }
-footer h4
+footer h6
 {
    color: white;
    font-weight: bold;
+   margin-top: 3px;
 }
 footer a span
 {
@@ -1410,9 +1411,9 @@ footer .partage{
 
       /* position: absolute;
        
-       margin-top: 15px;
       
-       /*left: 11.5%;*/
+      /*left: 11.5%;*/
+      margin-bottom: 7px;
        display: flex;
        align-items: center;
        justify-content: center;
